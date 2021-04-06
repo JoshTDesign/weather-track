@@ -46,7 +46,7 @@ function getCurrent(city) {
     currentCity = data.name;
     currentDate = moment.unix(data.dt).format('dddd, ll');
     currentConditions = data.weather[0].description;
-    currentIcon = 'http://openweathermap.org/img/w/' + data.weather[0].icon + '.png';
+    currentIcon = 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png';
     currentTemp = Math.floor(data.main.temp);
     currentHumidity = Math.floor(data.main.humidity);
     currentWind = (Math.floor(data.wind.speed));
@@ -86,7 +86,7 @@ function getForecast (lon, lat) {
       var thisDate = moment.unix(data.daily[i].dt).format('ll');
       $('<h1/>', {id: 'date', "class": 'card-title h3 text-start'}).text(thisDay).appendTo('#forecast'+i);
       $('<h2/>', {id: 'date', "class": 'card-subtitle mb-2 text-muted h6 text-start wrap'}).text(thisDate).appendTo('#forecast'+i);
-      var thisIcon = 'http://openweathermap.org/img/w/' + data.daily[0].weather[0].icon + '.png';
+      var thisIcon = 'https://openweathermap.org/img/w/' + data.daily[0].weather[0].icon + '.png';
       $('<img/>', {src: thisIcon}).appendTo('#forecast'+i);
       $('<p/>', {id: 'temp', "class": 'text-start'}).text('Termperature: ' + Math.floor(data.daily[i].temp.day)).appendTo('#forecast'+i);
       $('<p/>', {id: 'humidity', "class": 'text-start'}).text('Humidity: ' + Math.floor(data.daily[i].humidity)).appendTo('#forecast'+i);
