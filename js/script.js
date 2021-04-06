@@ -37,7 +37,7 @@ function initPage(){
 
 //fetches the api weather data for the current day, then calls the forecast function
 function getCurrent(city) {
-  var searchUrl = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=b8e4a5fc7efffbddda3bb2a508702e23&units=imperial'
+  var searchUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=b8e4a5fc7efffbddda3bb2a508702e23&units=imperial'
   fetch(searchUrl)
   .then(function (response) {
     return response.json();
@@ -59,7 +59,7 @@ function getCurrent(city) {
 
 //one call api retreives forecast data
 function getForecast (lon, lat) {
-  searchUrl = 'http://api.openweathermap.org/data/2.5/onecall?lat=' + lat + '&lon=' + lon + '&appid=b8e4a5fc7efffbddda3bb2a508702e23&units=imperial';
+  searchUrl = 'https://api.openweathermap.org/data/2.5/onecall?lat=' + lat + '&lon=' + lon + '&appid=b8e4a5fc7efffbddda3bb2a508702e23&units=imperial';
   fetch(searchUrl)
   .then(function (response) {
     return response.json();
