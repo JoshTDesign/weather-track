@@ -1,6 +1,6 @@
 # weather-track
 
-[Go to Screenshots](#screenshots)
+[Go to Screenshots](#screenshots)\n
 [Link to deployed project](#link-to-deployed-project)
 
 ## Simple dashboard for weather reporting and forecasts
