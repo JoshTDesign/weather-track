@@ -1,6 +1,7 @@
 # weather-track
 
 [Go to Screenshots](#screenshots)
+[Link to deployed project](#link-to-deployed-project)
 
 ## Simple dashboard for weather reporting and forecasts
 Weather track is a simple tool for fetching weather reports for any city, and displaying 5 day forecasts. Weather track saves past searches for you for your convenience. Weather
